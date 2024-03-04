@@ -3,6 +3,7 @@ package pe.edu.idat.apprecyclerviewimg
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import pe.edu.idat.apprecyclerviewimg.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.rvandroid.layoutManager = LinearLayoutManager(applicationContext)
-        binding.rvandroid.adapter = AdapterAndroid(listaAndroid(), applicationContext)
+        binding.rvAndroid.layoutManager = LinearLayoutManager(applicationContext)
+        binding.rvAndroid.adapter = AdapterAndroid(listaAndroid(), applicationContext)
     }
 
     fun listaAndroid(): List<Android> {

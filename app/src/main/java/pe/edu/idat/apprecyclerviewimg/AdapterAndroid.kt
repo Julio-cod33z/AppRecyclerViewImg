@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import pe.edu.idat.apprecyclerviewimg.databinding.ItemAndroidBinding
 
 class AdapterAndroid(val listaAndroid: List<Android> , val context: Context) : RecyclerView.Adapter<AdapterAndroid.ViewHolder>() {
 
-    inner class ViewHolder(val binding: ItemAndroidBinding) : RecyclerView.ViewHolder(bindng.root)
+    inner class ViewHolder(val binding: ItemAndroidBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemAndroidBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -29,6 +30,6 @@ class AdapterAndroid(val listaAndroid: List<Android> , val context: Context) : R
                 })
             }
         }
-        holder.binding.tvnomversion
+        holder.binding.tvNomVersion
     }
 }

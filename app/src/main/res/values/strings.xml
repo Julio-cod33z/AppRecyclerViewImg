@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppRecyclerViewImg</string>
+    <string name="titulo">Android Versions</string>
 </resources>
