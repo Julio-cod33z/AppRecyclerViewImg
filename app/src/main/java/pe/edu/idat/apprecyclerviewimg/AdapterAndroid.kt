@@ -21,10 +21,10 @@ class AdapterAndroid(val listaAndroid: List<Android> , val context: Context) : R
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         with(holder) {
             with(listaAndroid[position]) {
-                binding.tvnomversion.text = nombre
-                binding.tvnumversion.text = version
-                binding.ivandroid.setImageResource(img)
-                binding.cvandroid.setOnClickListener(View.OnClickListener {
+                binding.tvNomVersion.text = nombre
+                binding.tvNumVersion.text = version
+                binding.ivAndroid.setImageResource(img)
+                binding.cvAndroid.setOnClickListener(View.OnClickListener {
                     Toast.makeText(context, "Click Item Android $nombre", Toast.LENGTH_LONG).show()
                 })
             }

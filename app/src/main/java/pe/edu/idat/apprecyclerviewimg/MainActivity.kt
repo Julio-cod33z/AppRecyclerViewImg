@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         lista.add(Android("Gingerbread", "Android 2.3 - 2.3.7", R.drawable.image7))
         lista.add(Android("Honeycomb", "Android 3.0 - 3.2.6", R.drawable.image8))
         lista.add(Android("Jelly Bean", "Android 4.1 - 4.3.1", R.drawable.image9))
-        lista.add(Android("Marshmallow", "Android 6.0 - 6.0.1", R.drawable.imag10))
+        lista.add(Android("Marshmallow", "Android 6.0 - 6.0.1", R.drawable.image10))
         return lista
     }
 }
